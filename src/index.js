@@ -55,5 +55,5 @@ app.get("*", (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server berhasil di running di port ${PORT}`);
+  console.log(`Server berhasil di running di port ${process.env.PORT || 8080}`);
 });
